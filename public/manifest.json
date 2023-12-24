@@ -1,6 +1,6 @@
 {
-  "name": "Spot Tops",
-  "short_name": "Spot Tops",
+  "name": "spot-tops-client",
+  "short_name": "spot-tops-client",
   "start_url": "./",
   "id": "/",
   "description": "A web app for visualizing personalized Spotify data.",

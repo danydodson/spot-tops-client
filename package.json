@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A web app for visualizing personalized Spotify data.",
   "private": true,
-  "proxy": "http://localhost:8888",
+  "proxy": "https://spot-tops-server.fly.dev",
   "engines": {
     "node": "10.24.1"
   },
@@ -24,6 +24,7 @@
     "@reach/router": "^1.2.1",
     "axios": "^0.21.1",
     "babel-plugin-macros": "^2.6.1",
+    "babel-plugin-styled-components": "^1.10.6",
     "chart.js": "^2.8.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -34,7 +35,6 @@
   },
   "devDependencies": {
     "@danydodson/eslint-config-react": "2.4.0",
-    "babel-plugin-styled-components": "^1.10.6",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
@@ -67,11 +67,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danydodson/spot-tops.git"
+    "url": "https://github.com/danydodson/spot-tops-client.git"
   },
-  "homepage": "https://github.com/danydodson/spot-tops#readme",
+  "homepage": "https://github.com/danydodson/spot-tops-client",
   "bugs": {
-    "url": "https://github.com/danydodson/spot-tops/issues"
+    "url": "https://github.com/danydodson/spot-tops-client/issues"
   },
   "keywords": [ ]
 }
