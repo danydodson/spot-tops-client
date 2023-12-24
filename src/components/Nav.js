@@ -51,7 +51,7 @@ const Nav = () => (
       </MenuItem>
     </Menu>
     <Github>
-      <a href='https://github.com/danydodson/spotify-tracks' target='_blank' rel='noopener noreferrer'>
+      <a href='https://github.com/danydodson/spot-tops-client' target='_blank' rel='noopener noreferrer'>
         <IconGithub />
       </a>
     </Github>

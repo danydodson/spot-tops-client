@@ -65,13 +65,6 @@
   ],
   "author": "Dany Dodson <danydodson@gmail.com>",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danydodson/spot-tops-client.git"
-  },
-  "homepage": "https://github.com/danydodson/spot-tops-client",
-  "bugs": {
-    "url": "https://github.com/danydodson/spot-tops-client/issues"
-  },
-  "keywords": []
+  "homepage": "https://spot-tops-client.netlify.app",
+  "keywords": [ ]
 }
