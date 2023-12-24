@@ -3,7 +3,7 @@ import styled from "styled-components/macro"
 import { theme, mixins, Main } from "../styles"
 const { colors, fontSizes } = theme
 
-const LOGIN_URI = process.env.NODE_ENV !== 'production' ? 'https://spot-tops-server.fly.dev/login' : 'https://spot-tops-server.fly.dev/login'
+const LOGIN_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/login' : 'https://spot-tops-server.fly.dev/login/login'
 
 const LoginScreen = () => (
   <Login>
