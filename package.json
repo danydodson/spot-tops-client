@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A web app for visualizing personalized Spotify data.",
   "private": true,
-  "proxy": "https://spot-tops-server.fly.dev",
+  "proxy": "http://localhost:8888",
   "engines": {
     "node": "10.24.1"
   },
