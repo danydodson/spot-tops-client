@@ -3,8 +3,7 @@ import styled from "styled-components/macro"
 import { theme, mixins, Main } from "../styles"
 const { colors, fontSizes } = theme
 
-// const LOGIN_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/login' : 'https://spot-tops-client.netlify.app/login'
-const LOGIN_URI = "https://spot-tops-client.netlify.app/login"
+const LOGIN_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/login' : 'https://spot-tops-client.netlify.app/login'
 
 const LoginScreen = () => (
   <Login>
