@@ -7,11 +7,6 @@
   "engines": {
     "node": "10.24.1"
   },
-  "babelMacros": {
-    "styledComponents": {
-      "pure": true
-    }
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -41,6 +36,11 @@
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5"
   },
+  "babelMacros": {
+    "styledComponents": {
+      "pure": true
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -65,6 +65,10 @@
   ],
   "author": "Dany Dodson <danydodson@gmail.com>",
   "license": "ISC",
-  "homepage": "https://spot-tops-client.netlify.app",
-  "keywords": [ ]
+  "homepage": "https://spot-tops.com",
+  "keywords": [
+    "spotify",
+    "netlify",
+    "fly.io"
+  ]
 }
