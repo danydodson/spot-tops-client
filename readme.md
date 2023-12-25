@@ -4,8 +4,8 @@
 
 [spot-tops.com](https://spot-tops.com) is a web app for visualizing personalized Spotify data.
 
-- View the [client](https://github.com/danydodson/spot-tops-client). 
-- View the  [server](https://github.com/danydodson/spot-tops-server).
+- View the [client](https://github.com/danydodson/spot-tops-client).
+- View the [server](https://github.com/danydodson/spot-tops-server).
 - The client side of this app is currently hosted on [netlify](https://app.netlify.com/sites/spot-tops-client/overview).
 
 Built with a bunch of things, but to name a few:
@@ -57,5 +57,5 @@ SPOTIFY WEB API AUTHORIZATION CODE FLOW
 4. Add `http://app-name.herokuapp.com/callback` as a Redirect URI in the spotify application settings
 
 5. Once the app is live on Heroku, hitting http://app-name.herokuapp.com/login should be the same as hitting http://localhost:8888/login
- 
- 10.13.0
+
+   10.13.0
