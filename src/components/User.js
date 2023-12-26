@@ -43,6 +43,7 @@ const User = () => {
               ) : (
                 <NoAvatar>
                   <IconUser />
+                  <OmgLolClaim>proveneeb742</OmgLolClaim>
                 </NoAvatar>
               )}
             </Avatar>
@@ -295,6 +296,12 @@ const ArtistName = styled(Link)`
       border-bottom: 1px solid ${colors.white};
     }
   }
+`
+
+const OmgLolClaim = styled.span`
+  position: absolute;
+  color: ${colors.black};
+  opacity: 0;
 `
 
 export default User
