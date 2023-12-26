@@ -52,9 +52,7 @@ const User = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Name>
-                {user.display_name}
-              </Name>
+              <Name>{user.display_name}</Name>
             </UserName>
             <Stats>
               <Stat>
