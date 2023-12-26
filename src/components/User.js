@@ -317,6 +317,7 @@ const ArtistName = styled(Link)`
 
 const OmgLolClaim = styled.span`
   position: absolute;
+  font-size: 1px;
   color: ${colors.black};
   opacity: 0;
 `;
