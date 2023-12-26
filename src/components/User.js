@@ -1,37 +1,37 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "@reach/router";
-import { getUserInfo, logout } from "../spotify";
-import { catchErrors } from "../utils";
+import React, { useState, useEffect } from "react"
+import { Link } from "@reach/router"
+import { getUserInfo, logout } from "../spotify"
+import { catchErrors } from "../utils"
 
-import { IconUser, IconInfo } from "./icons";
-import Loader from "./Loader";
-import TrackItem from "./TrackItem";
+import { IconUser, IconInfo } from "./icons"
+import Loader from "./Loader"
+import TrackItem from "./TrackItem"
 
-import styled from "styled-components/macro";
-import { theme, mixins, media, Main } from "../styles";
-const { colors, fontSizes, spacing } = theme;
+import styled from "styled-components/macro"
+import { theme, mixins, media, Main } from "../styles"
+const { colors, fontSizes, spacing } = theme
 
 const User = () => {
-  const [user, setUser] = useState(null);
-  const [followedArtists, setFollowedArtists] = useState(null);
-  const [playlists, setPlaylists] = useState(null);
-  const [topArtists, setTopArtists] = useState(null);
-  const [topTracks, setTopTracks] = useState(null);
+  const [user, setUser] = useState(null)
+  const [followedArtists, setFollowedArtists] = useState(null)
+  const [playlists, setPlaylists] = useState(null)
+  const [topArtists, setTopArtists] = useState(null)
+  const [topTracks, setTopTracks] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
       const { user, followedArtists, playlists, topArtists, topTracks } =
-        await getUserInfo();
-      setUser(user);
-      setFollowedArtists(followedArtists);
-      setPlaylists(playlists);
-      setTopArtists(topArtists);
-      setTopTracks(topTracks);
-    };
-    catchErrors(fetchData());
-  }, []);
+        await getUserInfo()
+      setUser(user)
+      setFollowedArtists(followedArtists)
+      setPlaylists(playlists)
+      setTopArtists(topArtists)
+      setTopTracks(topTracks)
+    }
+    catchErrors(fetchData())
+  }, [])
 
-  const totalPlaylists = playlists ? playlists.total : 0;
+  const totalPlaylists = playlists ? playlists.total : 0
 
   return (
     <React.Fragment>
@@ -44,7 +44,6 @@ const User = () => {
               ) : (
                 <NoAvatar>
                   <IconUser />
-                  <OmgLolClaim>proveneeb742</OmgLolClaim>
                 </NoAvatar>
               )}
             </Avatar>
@@ -53,7 +52,10 @@ const User = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Name>{user.display_name}</Name>
+              <Name>
+                <OmgLolClaim>proveneeb742</OmgLolClaim>
+                {user.display_name}
+              </Name>
             </UserName>
             <Stats>
               <Stat>
@@ -130,14 +132,14 @@ const User = () => {
         <Loader />
       )}
     </React.Fragment>
-  );
-};
+  )
+}
 
 const Header = styled.header`
   ${mixins.flexCenter};
   flex-direction: column;
   position: relative;
-`;
+`
 
 const Avatar = styled.div`
   width: 150px;
@@ -145,20 +147,20 @@ const Avatar = styled.div`
   img {
     border-radius: 100%;
   }
-`;
+`
 
 const NoAvatar = styled.div`
   border: 2px solid currentColor;
   border-radius: 100%;
   padding: ${spacing.md};
-`;
+`
 
 const UserName = styled.a`
   &:hover,
   &:focus {
     color: ${colors.offGreen};
   }
-`;
+`
 
 const Name = styled.h1`
   font-size: 50px;
@@ -170,23 +172,23 @@ const Name = styled.h1`
   ${media.phablet`
     font-size: 8vw;
   `};
-`;
+`
 const Stats = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin-top: ${spacing.base};
-`;
+`
 
 const Stat = styled.div`
   text-align: center;
-`;
+`
 
 const Number = styled.div`
   color: ${colors.green};
   font-weight: 700;
   font-size: ${fontSizes.md};
-`;
+`
 
 const NumLabel = styled.p`
   color: ${colors.lightGrey};
@@ -194,7 +196,7 @@ const NumLabel = styled.p`
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: ${spacing.xs};
-`;
+`
 
 const LogoutButton = styled.a`
   background-color: transparent;
@@ -213,7 +215,7 @@ const LogoutButton = styled.a`
     background-color: ${colors.white};
     color: ${colors.black};
   }
-`;
+`
 
 const Preview = styled.section`
   display: grid;
@@ -225,7 +227,7 @@ const Preview = styled.section`
     display: block;
     margin-top: 70px;
   `};
-`;
+`
 
 const Tracklist = styled.div`
   ${media.tablet`
@@ -233,7 +235,7 @@ const Tracklist = styled.div`
       margin-top: 50px;
     }
   `};
-`;
+`
 
 const TracklistHeading = styled.div`
   ${mixins.flexBetween};
@@ -242,7 +244,7 @@ const TracklistHeading = styled.div`
     display: inline-block;
     margin: 0;
   }
-`;
+`
 
 const MoreButton = styled(Link)`
   ${mixins.button};
@@ -252,7 +254,7 @@ const MoreButton = styled(Link)`
     padding: 11px 20px;
     font-sizes: ${fontSizes.xs};
   `};
-`;
+`
 
 const Mask = styled.div`
   ${mixins.flexCenter};
@@ -270,7 +272,7 @@ const Mask = styled.div`
   svg {
     width: 25px;
   }
-`;
+`
 
 const Artist = styled.li`
   display: flex;
@@ -285,7 +287,7 @@ const Artist = styled.li`
       opacity: 1;
     }
   }
-`;
+`
 
 const ArtistArtwork = styled(Link)`
   display: inline-block;
@@ -300,7 +302,7 @@ const ArtistArtwork = styled(Link)`
     margin-right: ${spacing.base};
     border-radius: 100%;
   }
-`;
+`
 
 const ArtistName = styled(Link)`
   flex-grow: 1;
@@ -311,12 +313,12 @@ const ArtistName = styled(Link)`
       border-bottom: 1px solid ${colors.white};
     }
   }
-`;
+`
 
 const OmgLolClaim = styled.span`
   position: absolute;
   color: ${colors.black};
   opacity: 0;
-`;
+`
 
-export default User;
+export default User
