@@ -53,7 +53,6 @@ const User = () => {
               rel="noopener noreferrer"
             >
               <Name>
-                <OmgLolClaim>proveneeb742</OmgLolClaim>
                 {user.display_name}
               </Name>
             </UserName>
@@ -313,13 +312,6 @@ const ArtistName = styled(Link)`
       border-bottom: 1px solid ${colors.white};
     }
   }
-`;
-
-const OmgLolClaim = styled.span`
-  position: absolute;
-  font-size: 1px;
-  color: ${colors.black};
-  opacity: 0;
 `;
 
 export default User;
